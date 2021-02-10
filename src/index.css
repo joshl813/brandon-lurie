@@ -6,32 +6,45 @@
   font-family: "Quicksand";
   color: #333;
 }
-.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-  position: fixed;
+
+/* Nav Bar */
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin-top: 1.5em;
 }
-.navbar .brand {
+
+.container .navbar {
+  height: auto;
+	width: 100%;
+	position: fixed;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+	z-index: 100;
+	background-color: rgb(25, 10, 92);
+}
+.container .navbar .brand {
   color: white;
   text-decoration: none;
-  background-color: blue;
-  border-radius: 3em;
+  background-color: rgb(191, 191, 206);
+  
   padding: 1em;
 
 }
-.navbar .links {
-  margin-left: auto;
+.container .navbar .links {
+  justify-items: right;
+  margin-right: 0px;
 }
-.navbar a {
+.container .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
-.navbar a:hover {
+.container .navbar a:hover {
   color: blue;
 }
 .content {

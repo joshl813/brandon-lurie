@@ -5,17 +5,20 @@ const Navbar = () => {
     }
 
     return (  
-        <nav className="navbar">
-
-            <button class = 'brand' onClick={handleClick()}>Brandon Lurie</button>
-            <div className="links">
-                <a href="/">Home</a>
-                <a href="Blog">The Blognpm </a>
-                <a href="/About">About Me</a>
-                <a href="Contact">Contact Me</a>
-                
-            </div>
-        </nav>
+       <div className="container">
+            <nav className="navbar">
+                <div className="brand">
+                     <a href = 'brand' onClick={handleClick()}>Brandon Lurie</a>
+                </div>
+                <div className="links">
+                    <a href="/">Home</a>
+                    <a href="Blog">The Blog </a>
+                    <a href="/About">About Me</a>
+                    <a href="Contact">Contact Me</a>
+                    
+                </div>
+            </nav>
+        </div>
     );
 }
  
